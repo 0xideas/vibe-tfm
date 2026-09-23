@@ -1,0 +1,7 @@
+models/
+logs/
+checkpoints/
+outputs/
+data/
+state/
+.DS_Store
