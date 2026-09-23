@@ -23,3 +23,8 @@ You need to achieve the following:
  6. Analyse the model outputs extensively, using any interesting internal or external (if provided in the original input data) validation of the model outputs. Summarise your findings and output them in a nicely formatted, concise documentation/v1-analysis.md. Think about what experiments could make sense, and add these ideas to that output.
 
  Overall, try not to overengineer and keep it simple, for now. This is a v1. We mainly want to learn whether this data is suitable for foundation model training, not to get a final result in one session. At the same time, be thorough so that we can make evidence-based decisions. 
+
+
+### Next Steps
+
+Hopefully, you now have a trained v1 model. I would recommend establishing real downstream evaluation metrics, and then iterating on preprocessing and model parametrization until either the development of a full production system becomes attractive, or no clear further improvement is possible. To scale data and models, move training to a node with multiple GPUs, or a multi node cluster.
