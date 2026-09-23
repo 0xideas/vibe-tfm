@@ -1,0 +1,19 @@
+project_root: .
+preprocessing_data_path: PLEASE FILL
+model_type: PLEASE FILL # generative or embedding
+model_path: PLEASE FILL
+
+input_columns: [EXAMPLE_INPUT_COLUMN_NAME] # should include all target column, can include additional columns
+target_columns: [EXAMPLE_TARGET_COLUMN_NAME]
+target_column_types:
+  EXAMPLE_TARGET_COLUMN_NAME: real
+
+training_objective: causal
+output_probabilities: false
+decode_categories: true
+device: cpu
+context_length: 48
+inference_batch_size: 10
+
+autoregressive: true
+generation_steps: 5
