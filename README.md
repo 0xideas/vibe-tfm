@@ -6,13 +6,13 @@ You really shouldn't vibe code a foundation model from scratch. Unless you use [
 
 ### Approach
 
-Put the data you want to train on in `data`, install sequifier using `pip install sequifier` then paste the prompt below into Codex or CC.
+Put the data you want to train on in `data`, install sequifier using `pip install sequifier==3.1.0.0` then paste the prompt below into Codex or CC.
 
 ### Prompt
 
 Your goal is to build a v1 transaction foundation model that learns informative representations from transaction data, using sequifier.
 
-Please preprocess the transaction data you find in `data` to prepare it to serve as input data to `sequifier preprocess`. Find the file https://github.com/0xideas/sequifier/blob/main/documentation/consolidated-docs.md for the sequifier version that is installed and use it as reference.
+Please preprocess the transaction data you find in `data` to prepare it to serve as input data to `sequifier preprocess`. To see the complete docs, run `sequifier docs`.
 
 You need to achieve the following:
  1. Identify what current and derived variables should go into the v1 of the transaction foundation model, as input and target variables. Check what input data are available, the quality of each (completeness, outliers), potential problems with their distribution or cardinality, and adopt mitigations for these potential problems (for reference, check resources/shaping-the-problem.md). Document your analysis, decision process and decision outcomes in documentation/thoughts-on-preprocessing.md. When in doubt over specific tradeoffs, check the wider literature. 
